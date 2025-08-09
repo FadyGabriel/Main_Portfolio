@@ -2,6 +2,8 @@ import project1 from "../assets/projects/p1.png";
 import project2 from "../assets/projects/Movie.png";
 import project3 from "../assets/projects/p3.png";
 import Quiz from "../assets/projects/Quiz.png";
+import FAK from '../assets/projects/FAK.png';
+import logo1 from '../assets/logo1.png';
 
 
 
@@ -81,8 +83,6 @@ export const PROJECTS = [
     technologies : ["HTML5", "CSS3", "JavaScript"],
     liveDemo : "https://quiz-hnsqz1o6n-fadygabriels-projects.vercel.app/"
   },
-
-
   {
     title: "Portfolio Website",
     image: portfolio2,
@@ -90,6 +90,14 @@ export const PROJECTS = [
       "A personal portfolio website showcasing projects, skills, and contact information",
     technologies: ["HTML5", "CSS3", "JavaScript"],
     liveDemo : "https://fadygabriel.netlify.app/"
+  },
+    {
+    title: "FAK Sport Website",
+    image: FAK,
+    description:
+      "FAK is a sports platform focused on football and basketball, offering live scores, real-time match updates, and a responsive design with an exceptional UI/UX experience.",
+    technologies: ["HTML5", "CSS3", "JavaScript" , "React" , "Tailwind" , "Context API"],
+    liveDemo : "https://fak-one.vercel.app/"
   },
 ];
 
@@ -107,9 +115,9 @@ export const EDUCATION = {
 };
 
 export const CERTIFICATIONS = [
-  // {
-  //   title: "React(Basic)",
-  //   image: logo1,
-  //   link : "https://www.hackerrank.com/certificates/38e90f0cb576"
-  // },
+  {
+    title: "CSS(Basic)",
+    image: logo1,
+    link : "https://www.hackerrank.com/certificates/743365837ae1"
+  },
 ];

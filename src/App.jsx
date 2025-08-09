@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import "@fortawesome/fontawesome-free/css/all.min.css"
 import Navbar from './Components/Navbar/Navbar'
@@ -30,7 +29,7 @@ function App() {
         <Technologies></Technologies>
         <Experiences></Experiences>
         <Projects></Projects>
-        {/* <Certifications></Certifications> */}
+        <Certifications></Certifications>
         <Contact></Contact>
       </div>
     </div>

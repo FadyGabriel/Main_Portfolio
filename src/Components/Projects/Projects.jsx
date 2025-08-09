@@ -44,46 +44,46 @@ export default function Projects() {
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {currentProjects.map((project, index) => (
-  <motion.div
-    key={index}
-    whileInView={{ opacity: 1, y: 0 }}
-    initial={{ opacity: 0, y: 50 }}
-    transition={{ duration: 0.6, delay: index * 0.1 }}
-    className="bg-neutral-900 p-5 rounded-xl shadow-md hover:shadow-lg hover:scale-[1.02] transition duration-300"
-  >
-    <img
-      src={project.image}
-      alt={project.title}
-      className="w-full h-60 object-cover rounded-md mb-4"
-    />
-    <h3 className="text-lg font-semibold text-white mb-2">{project.title}</h3>
-    <p className="text-sm text-neutral-400 mb-4">{project.description}</p>
+            <motion.div
+              key={index}
+              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 50 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              className="bg-neutral-900 p-5 rounded-xl shadow-md hover:shadow-lg hover:scale-[1.02] transition duration-300"
+            >
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-60 object-cover rounded-md mb-4"
+              />
+              <h3 className="text-lg font-semibold text-white mb-2">{project.title}</h3>
+              <p className="text-sm text-neutral-400 mb-4">{project.description}</p>
 
-    <div className="flex flex-wrap gap-2 mb-4">
-      {project.technologies.map((tech, i) => (
-        <span
-          key={i}
-          className="bg-purple-800 text-white px-2 py-1 text-xs rounded"
-        >
-          {tech}
-        </span>
-      ))}
-    </div>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {project.technologies.map((tech, i) => (
+                  <span
+                    key={i}
+                    className="bg-purple-800 text-white px-2 py-1 text-xs rounded"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
 
-    {/* Live Demo Button */}
-    {project.liveDemo && (
-  <a
-    href={project.liveDemo}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="mt-auto flex items-center justify-center px-4 py-2 bg-white text-purple-700 text-sm rounded transition"
-  >
-    Live Demo
-  </a>
-)}
+              {/* Live Demo Button */}
+              {project.liveDemo && (
+            <a
+              href={project.liveDemo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-auto flex items-center justify-center px-4 py-2 bg-white text-purple-700 text-sm rounded transition"
+            >
+              Live Demo
+            </a>
+          )}
 
-  </motion.div>
-))}
+            </motion.div>
+          ))}
         </motion.div>
       </AnimatePresence>
 
